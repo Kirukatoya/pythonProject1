@@ -1,98 +1,123 @@
-
+import math
 
 from PySide2 import QtCore
-from PyQt5.QtWidgets import QMainWindow, QWidget, QLabel, QLineEdit
+from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication
+from PyQt5 import uic
 
-from ui_pro import *
+#import pro
+#from ui_pro import *
 
-class MainWindow(QMainWindow):
+qt_creator = "pro.ui"
+Ui_MainWindow, QtBaseClass = uic.loadUiType(qt_creator)
+class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
-        super(MainWindow, self).__init__()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+        QMainWindow.__init__(self)
+        Ui_MainWindow.__init__(self)
 
+        #self.ui = Ui_MainWindow()
+        self.setupUi(self)
 
         # установить event filter для кнопок
-        self.ui.HelpBtn.installEventFilter(self)
-        self.ui.HomeBtn.installEventFilter(self)
-        self.ui.InformationBtn.installEventFilter(self)
-        self.ui.NewTaskBtn.installEventFilter(self)
-        self.ui.OkBtn.installEventFilter(self)
-        # self.ui.HumansPerHour.
+        self.HelpBtn.installEventFilter(self)
+        self.HomeBtn.installEventFilter(self)
+        self.InformationBtn.installEventFilter(self)
+        self.NewTaskBtn.installEventFilter(self)
+        self.OkBtn.installEventFilter(self)
+
+        self.HumansPerHour.installEventFilter(self)
 
 
 
 
         # Создаем QWidget для отображения
-        self.help_widget = QWidget()
-        self.home_widget = QWidget()
-        self.information_widget = QWidget()
-        self.new_task_widget = QWidget()
-        self.new_task2_widget = QWidget()
-
-
-
-
+        #self.help_widget = QWidget()
+        #self.home_widget = QWidget()
+        #self.information_widget = QWidget()
+        #self.new_task2_widget = QWidget()
 
         # Добавляем QWidget в QStackedWidget
-        self.ui.stackedWidget.addWidget(self.help_widget)
-        self.ui.stackedWidget.addWidget(self.home_widget)
-        self.ui.stackedWidget.addWidget(self.information_widget)
-        self.ui.stackedWidget.addWidget(self.new_task_widget)
-        self.ui.stackedWidget.addWidget(self.new_task2_widget)
+        #self.stackedWidget.addWidget(self.help_widget)
+        #self.stackedWidget.addWidget(self.information_widget)
+        #self.stackedWidget.addWidget(self.new_task_widget)
+        #self.stackedWidget.addWidget(self.new_task2_widget)
 
-
-
-        self.show()
+        #self.show()
 
 
     def eventFilter(self, source, event):
-        if source == self.ui.HelpBtn and event.type() == QtCore.QEvent.MouseButtonPress:
-            self.ui.stackedWidget.setCurrentIndex(1)
+        if source == self.HelpBtn and event.type() == QtCore.QEvent.MouseButtonPress:
+            self.stackedWidget.setCurrentIndex(1)
             print("HelpBtn event filter")
 
-        if source == self.ui.NewTaskBtn and event.type() == QtCore.QEvent.MouseButtonPress:
-            self.ui.stackedWidget.setCurrentIndex(3)
+        if source == self.NewTaskBtn and event.type() == QtCore.QEvent.MouseButtonPress:
+            self.stackedWidget.setCurrentIndex(3)
             print("NewTaskBtn event filter")
 
-        if source == self.ui.InformationBtn and event.type() == QtCore.QEvent.MouseButtonPress:
-            self.ui.stackedWidget.setCurrentIndex(2)
+        if source == self.InformationBtn and event.type() == QtCore.QEvent.MouseButtonPress:
+            self.stackedWidget.setCurrentIndex(2)
             print("InformationBtn event filter")
 
-        if source == self.ui.HomeBtn and event.type() == QtCore.QEvent.MouseButtonPress:
-            self.ui.stackedWidget.setCurrentIndex(0)
+        if source == self.HomeBtn and event.type() == QtCore.QEvent.MouseButtonPress:
+            self.stackedWidget.setCurrentIndex(0)
             print("HomeBtn event filter")
 
-        if source == self.ui.OkBtn and event.type() == QtCore.QEvent.MouseButtonPress:
-            self.ui.stackedWidget.setCurrentIndex(4)
+        if source == self.OkBtn and event.type() == QtCore.QEvent.MouseButtonPress:
+            self.stackedWidget.setCurrentIndex(4)
             print("OkBtn event filter")
+            self.OkBtn.clicked.connect(self.ras)
 
-
+        if source == self.HumansPerHour and event.type() == QtCore.QEvent.MouseButtonPress:
+            print("нажал")
 
         return super().eventFilter(source, event)
 
 
-    def show_help(self):
-        # Переключаемся на нужный QWidget при нажатии на кнопку HelpBtn
-        self.ui.stackedWidget.setCurrentWidget(self.help_widget)
+    def click(self):
+        print("нажитие")
 
-    def show_home(self):
-        # Переключаемся на нужный QWidget при нажатии на кнопку
-        self.ui.stackedWidget.setCurrentWidget(self.home_widget)
+    def ras(self):
+        # Получение введенных данных
+        per_hour = float(self.lineEdit_7.text())
+        service_channels = int(self.lineEdit_6.text())
+        service_intensity = float(self.lineEdit_5.text())
+        service_time = float(self.lineEdit_8.text())
+        print("xb", per_hour)
 
-    def show_informstion(self):
-        # Переключаемся на нужный QWidget при нажатии на кнопку
-        self.ui.stackedWidget.setCurrentWidget(self.information_widget)
+        # Расчет показателей
+        # Нагрузка системы
+        system_load = per_hour / service_intensity
 
-    def show_new_task(self):
-        # Переключаемся на нужный QWidget при нажатии на кнопку
-        self.ui.stackedWidget.setCurrentWidget(self.new_task_widget)
+        # Вероятность простоя системы
+        idle_probability = (1 + sum([(system_load ** i / math.factorial(i) for i in range(1, service_channels + 1))]) + (system_load ** (service_channels + 1) / math.factorial(service_channels) * (service_channels - system_load)) ** -1)
 
+        # Вероятность образования очереди
+        poch = ((idle_probability**(service_channels+1)) / math.factorial(service_channels) * (service_channels - idle_probability))
 
+        # Средняя длина очереди
+        avg_queue_length = (service_channels / service_channels - service_intensity) * poch
 
+        # Среднее время ожидания в очереди
+        avg_waiting_time = avg_queue_length / per_hour
+
+        # Среднее число занятых каналолов
+        avg_number_channels = system_load
+
+        # Среднее время прибывания в системе
+        sistem_time = avg_waiting_time + service_time
+
+        # Вставка рассчитанных показателей
+        self.lineEdit.setText(str(idle_probability))
+        self.lineEdit_2.setText(str(avg_queue_length))
+        self.lineEdit_3.setText(str(avg_waiting_time))
+        self.lineEdit_4.setText(str(system_load))
+        self.lineEdit_10.setText(str(poch))
+        self.lineEdit_11.setText(str(avg_number_channels))
+        self.lineEdit_12.setText(str(sistem_time))
 
 if __name__ == "__main__":
     import sys
     app = QApplication(sys.argv)
     window = MainWindow()
+    window.show()
+    #window = MainWindow()
     sys.exit(app.exec_())
