@@ -259,7 +259,7 @@ class Ui_MainWindow(object):
         self.lineEdit_6.setObjectName("lineEdit_6")
         self.gridLayout_3.addWidget(self.lineEdit_6, 2, 1, 1, 1)
         self.lineEdit_7 = QtWidgets.QLineEdit(self.frame_8)
-        self.lineEdit_7.setEnabled(False)
+        self.lineEdit_7.setEnabled(True)
         self.lineEdit_7.setTabletTracking(True)
         self.lineEdit_7.setFocusPolicy(QtCore.Qt.ClickFocus)
         self.lineEdit_7.setStyleSheet("background-color: rgb(255, 255, 255);")
