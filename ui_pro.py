@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'profLrHMW.ui'
+## Form generated from reading UI file 'prouMTqIj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -272,7 +272,13 @@ class Ui_MainWindow(object):
 
         self.lineEdit_6 = QLineEdit(self.frame_8)
         self.lineEdit_6.setObjectName(u"lineEdit_6")
-        self.lineEdit_6.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.lineEdit_6.setStyleSheet(u"QLineEdit {\n"
+"	border: 2px add rgb(255, 0, 0);\n"
+"	border-radius: 20px;\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+        self.lineEdit_6.setFrame(True)
 
         self.verticalLayout_13.addWidget(self.lineEdit_6)
 
@@ -284,7 +290,12 @@ class Ui_MainWindow(object):
 
         self.lineEdit_5 = QLineEdit(self.frame_8)
         self.lineEdit_5.setObjectName(u"lineEdit_5")
-        self.lineEdit_5.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.lineEdit_5.setStyleSheet(u"QLineEdit {\n"
+"	border: 2px add rgb(255, 0, 0);\n"
+"	border-radius: 20px;\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
 
         self.verticalLayout_13.addWidget(self.lineEdit_5)
 
@@ -296,7 +307,12 @@ class Ui_MainWindow(object):
 
         self.lineEdit_8 = QLineEdit(self.frame_8)
         self.lineEdit_8.setObjectName(u"lineEdit_8")
-        self.lineEdit_8.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.lineEdit_8.setStyleSheet(u"QLineEdit {\n"
+"	border: 2px add rgb(255, 0, 0);\n"
+"	border-radius: 20px;\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
 
         self.verticalLayout_13.addWidget(self.lineEdit_8)
 
@@ -345,24 +361,6 @@ class Ui_MainWindow(object):
         self.frame_10.setFrameShadow(QFrame.Raised)
         self.gridLayout_2 = QGridLayout(self.frame_10)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.label_33 = QLabel(self.frame_10)
-        self.label_33.setObjectName(u"label_33")
-        font3 = QFont()
-        font3.setFamily(u"Franklin Gothic Medium")
-        font3.setPointSize(12)
-        self.label_33.setFont(font3)
-
-        self.gridLayout_2.addWidget(self.label_33, 0, 0, 1, 1)
-
-        self.label_34 = QLabel(self.frame_10)
-        self.label_34.setObjectName(u"label_34")
-        font4 = QFont()
-        font4.setFamily(u"Franklin Gothic Medium")
-        font4.setPointSize(10)
-        self.label_34.setFont(font4)
-
-        self.gridLayout_2.addWidget(self.label_34, 1, 0, 1, 1)
-
         self.lineEdit = QLineEdit(self.frame_10)
         self.lineEdit.setObjectName(u"lineEdit")
         self.lineEdit.setStyleSheet(u"\n"
@@ -376,43 +374,69 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.lineEdit, 2, 0, 1, 1)
 
+        self.label_39 = QLabel(self.frame_10)
+        self.label_39.setObjectName(u"label_39")
+        font3 = QFont()
+        font3.setFamily(u"Franklin Gothic Medium")
+        font3.setPointSize(10)
+        self.label_39.setFont(font3)
+
+        self.gridLayout_2.addWidget(self.label_39, 11, 0, 1, 1)
+
+        self.lineEdit_12 = QLineEdit(self.frame_10)
+        self.lineEdit_12.setObjectName(u"lineEdit_12")
+        self.lineEdit_12.setStyleSheet(u"QLineEdit {\n"
+"	border: 2px add rgb(255, 0, 0);\n"
+"	border-radius: 20px;\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+
+        self.gridLayout_2.addWidget(self.lineEdit_12, 14, 0, 1, 1)
+
+        self.lineEdit_11 = QLineEdit(self.frame_10)
+        self.lineEdit_11.setObjectName(u"lineEdit_11")
+        self.lineEdit_11.setStyleSheet(u"QLineEdit {\n"
+"	border: 2px add rgb(255, 0, 0);\n"
+"	border-radius: 20px;\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+
+        self.gridLayout_2.addWidget(self.lineEdit_11, 12, 0, 1, 1)
+
+        self.label_34 = QLabel(self.frame_10)
+        self.label_34.setObjectName(u"label_34")
+        self.label_34.setFont(font3)
+
+        self.gridLayout_2.addWidget(self.label_34, 1, 0, 1, 1)
+
         self.label_37 = QLabel(self.frame_10)
         self.label_37.setObjectName(u"label_37")
-        self.label_37.setFont(font4)
+        self.label_37.setFont(font3)
 
         self.gridLayout_2.addWidget(self.label_37, 3, 0, 1, 1)
 
-        self.lineEdit_2 = QLineEdit(self.frame_10)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-        self.lineEdit_2.setStyleSheet(u"QLineEdit {\n"
+        self.lineEdit_10 = QLineEdit(self.frame_10)
+        self.lineEdit_10.setObjectName(u"lineEdit_10")
+        self.lineEdit_10.setStyleSheet(u"QLineEdit {\n"
 "	border: 2px add rgb(255, 0, 0);\n"
 "	border-radius: 20px;\n"
 "	color: rgb(0, 0, 0);\n"
 "	background-color: rgb(255, 255, 255);\n"
 "}")
 
-        self.gridLayout_2.addWidget(self.lineEdit_2, 4, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.lineEdit_10, 10, 0, 1, 1)
 
         self.label_35 = QLabel(self.frame_10)
         self.label_35.setObjectName(u"label_35")
-        self.label_35.setFont(font4)
+        self.label_35.setFont(font3)
 
         self.gridLayout_2.addWidget(self.label_35, 5, 0, 1, 1)
 
-        self.lineEdit_3 = QLineEdit(self.frame_10)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
-        self.lineEdit_3.setStyleSheet(u"QLineEdit {\n"
-"	border: 2px add rgb(255, 0, 0);\n"
-"	border-radius: 20px;\n"
-"	color: rgb(0, 0, 0);\n"
-"	background-color: rgb(255, 255, 255);\n"
-"}")
-
-        self.gridLayout_2.addWidget(self.lineEdit_3, 6, 0, 1, 1)
-
         self.label_38 = QLabel(self.frame_10)
         self.label_38.setObjectName(u"label_38")
-        self.label_38.setFont(font4)
+        self.label_38.setFont(font3)
 
         self.gridLayout_2.addWidget(self.label_38, 7, 0, 1, 1)
 
@@ -429,71 +453,46 @@ class Ui_MainWindow(object):
 
         self.label_2 = QLabel(self.frame_10)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setFont(font4)
+        self.label_2.setFont(font3)
 
         self.gridLayout_2.addWidget(self.label_2, 9, 0, 1, 1)
 
-        self.lineEdit_10 = QLineEdit(self.frame_10)
-        self.lineEdit_10.setObjectName(u"lineEdit_10")
-        self.lineEdit_10.setStyleSheet(u"QLineEdit {\n"
-"	border: 2px add rgb(255, 0, 0);\n"
-"	border-radius: 20px;\n"
-"	color: rgb(0, 0, 0);\n"
-"	background-color: rgb(255, 255, 255);\n"
-"}")
-
-        self.gridLayout_2.addWidget(self.lineEdit_10, 10, 0, 1, 1)
-
-        self.label_39 = QLabel(self.frame_10)
-        self.label_39.setObjectName(u"label_39")
-        self.label_39.setFont(font4)
-
-        self.gridLayout_2.addWidget(self.label_39, 11, 0, 1, 1)
-
-        self.lineEdit_11 = QLineEdit(self.frame_10)
-        self.lineEdit_11.setObjectName(u"lineEdit_11")
-        self.lineEdit_11.setStyleSheet(u"QLineEdit {\n"
-"	border: 2px add rgb(255, 0, 0);\n"
-"	border-radius: 20px;\n"
-"	color: rgb(0, 0, 0);\n"
-"	background-color: rgb(255, 255, 255);\n"
-"}")
-
-        self.gridLayout_2.addWidget(self.lineEdit_11, 12, 0, 1, 1)
-
-        self.label_3 = QLabel(self.frame_10)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setFont(font4)
-
-        self.gridLayout_2.addWidget(self.label_3, 13, 0, 1, 1)
-
-        self.lineEdit_9 = QLineEdit(self.frame_10)
-        self.lineEdit_9.setObjectName(u"lineEdit_9")
-        self.lineEdit_9.setStyleSheet(u"QLineEdit {\n"
-"	border: 2px add rgb(255, 0, 0);\n"
-"	border-radius: 20px;\n"
-"	color: rgb(0, 0, 0);\n"
-"	background-color: rgb(255, 255, 255);\n"
-"}")
-
-        self.gridLayout_2.addWidget(self.lineEdit_9, 14, 0, 1, 1)
-
         self.label_6 = QLabel(self.frame_10)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setFont(font4)
+        self.label_6.setFont(font3)
 
-        self.gridLayout_2.addWidget(self.label_6, 15, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.label_6, 13, 0, 1, 1)
 
-        self.lineEdit_12 = QLineEdit(self.frame_10)
-        self.lineEdit_12.setObjectName(u"lineEdit_12")
-        self.lineEdit_12.setStyleSheet(u"QLineEdit {\n"
+        self.label_33 = QLabel(self.frame_10)
+        self.label_33.setObjectName(u"label_33")
+        font4 = QFont()
+        font4.setFamily(u"Franklin Gothic Medium")
+        font4.setPointSize(12)
+        self.label_33.setFont(font4)
+
+        self.gridLayout_2.addWidget(self.label_33, 0, 0, 1, 1)
+
+        self.lineEdit_2 = QLineEdit(self.frame_10)
+        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.lineEdit_2.setStyleSheet(u"QLineEdit {\n"
 "	border: 2px add rgb(255, 0, 0);\n"
 "	border-radius: 20px;\n"
 "	color: rgb(0, 0, 0);\n"
 "	background-color: rgb(255, 255, 255);\n"
 "}")
 
-        self.gridLayout_2.addWidget(self.lineEdit_12, 16, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.lineEdit_2, 4, 0, 1, 1)
+
+        self.lineEdit_3 = QLineEdit(self.frame_10)
+        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.lineEdit_3.setStyleSheet(u"QLineEdit {\n"
+"	border: 2px add rgb(255, 0, 0);\n"
+"	border-radius: 20px;\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+
+        self.gridLayout_2.addWidget(self.lineEdit_3, 6, 0, 1, 1)
 
 
         self.gridLayout.addWidget(self.frame_10, 0, 0, 1, 1)
@@ -519,13 +518,6 @@ class Ui_MainWindow(object):
 
 
         self.gridLayout_4.addWidget(self.CenterMenuSubContainer, 0, 1, 1, 1)
-
-        self.mainBodyCotntainer = QWidget(self.centralwidget)
-        self.mainBodyCotntainer.setObjectName(u"mainBodyCotntainer")
-        self.horizontalLayout = QHBoxLayout(self.mainBodyCotntainer)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-
-        self.gridLayout_4.addWidget(self.mainBodyCotntainer, 0, 2, 1, 1)
 
         self.LeftMenuContainer = QWidget(self.centralwidget)
         self.LeftMenuContainer.setObjectName(u"LeftMenuContainer")
@@ -630,6 +622,29 @@ class Ui_MainWindow(object):
         self.gridLayout_4.addWidget(self.LeftMenuContainer, 0, 0, 1, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
+        QWidget.setTabOrder(self.lineEdit_6, self.MenuBtn)
+        QWidget.setTabOrder(self.MenuBtn, self.InformationBtn)
+        QWidget.setTabOrder(self.InformationBtn, self.HomeBtn)
+        QWidget.setTabOrder(self.HomeBtn, self.lineEdit_2)
+        QWidget.setTabOrder(self.lineEdit_2, self.HelpBtn)
+        QWidget.setTabOrder(self.HelpBtn, self.lineEdit_3)
+        QWidget.setTabOrder(self.lineEdit_3, self.lineEdit_4)
+        QWidget.setTabOrder(self.lineEdit_4, self.lineEdit_10)
+        QWidget.setTabOrder(self.lineEdit_10, self.lineEdit_11)
+        QWidget.setTabOrder(self.lineEdit_11, self.lineEdit_12)
+        QWidget.setTabOrder(self.lineEdit_12, self.textEdit)
+        QWidget.setTabOrder(self.textEdit, self.NewTaskBtn)
+        QWidget.setTabOrder(self.NewTaskBtn, self.lineEdit_5)
+        QWidget.setTabOrder(self.lineEdit_5, self.OkBtn)
+        QWidget.setTabOrder(self.OkBtn, self.textEdit_4)
+        QWidget.setTabOrder(self.textEdit_4, self.textEdit_5)
+        QWidget.setTabOrder(self.textEdit_5, self.textEdit_6)
+        QWidget.setTabOrder(self.textEdit_6, self.textEdit_7)
+        QWidget.setTabOrder(self.textEdit_7, self.textEdit_3)
+        QWidget.setTabOrder(self.textEdit_3, self.textEdit_2)
+        QWidget.setTabOrder(self.textEdit_2, self.textEdit_8)
+        QWidget.setTabOrder(self.textEdit_8, self.lineEdit_8)
+        QWidget.setTabOrder(self.lineEdit_8, self.lineEdit)
 
         self.retranslateUi(MainWindow)
         self.HumansPerHour.textEdited.connect(self.HumansPerHour.setText)
@@ -693,26 +708,28 @@ class Ui_MainWindow(object):
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u0435\u0435 \u043a\u043e\u043b-\u0432\u043e \u043f\u043e\u0441\u0435\u0442\u0438\u0442\u0435\u043b\u0435\u0439 \u0432 \u0447\u0430\u0441", None))
         self.lineEdit_7.setInputMask("")
         self.lineEdit_7.setText("")
-        self.lineEdit_7.setPlaceholderText(QCoreApplication.translate("MainWindow", u"hi", None))
+        self.lineEdit_7.setPlaceholderText("")
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u043b-\u0432\u043e \u043a\u0430\u043d\u0430\u043b\u043e\u0432 \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u044f", None))
+        self.lineEdit_6.setText("")
         self.label_21.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043d\u0442\u0435\u043d\u0441\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u044f", None))
+        self.lineEdit_5.setText("")
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0440\u0435\u043c\u044f \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u044f", None))
+        self.lineEdit_8.setText("")
 #if QT_CONFIG(tooltip)
         self.OkBtn.setToolTip(QCoreApplication.translate("MainWindow", u"\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044c", None))
 #endif // QT_CONFIG(tooltip)
         self.OkBtn.setText(QCoreApplication.translate("MainWindow", u"OK", None))
         self.HumansPerHour.setText("")
         self.HumansPerHour.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Hello", None))
-        self.label_33.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u0438 \u0438 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0430\u0446\u0438\u0438</p></body></html>", None))
-        self.label_34.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043e\u044f\u0442\u043d\u043e\u0441\u0442\u044c \u043f\u0440\u043e\u0441\u0442\u043e\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u044b", None))
         self.lineEdit.setText("")
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u0435\u0435 \u0447\u0438\u0441\u043b\u043e \u0437\u0430\u043d\u044f\u0442\u044b\u0445 \u043a\u0430\u043d\u0430\u043b\u043e\u0432", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043e\u044f\u0442\u043d\u043e\u0441\u0442\u044c \u043f\u0440\u043e\u0441\u0442\u043e\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u044b", None))
         self.label_37.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u044f\u044f \u0434\u043b\u0438\u043d\u0430 \u043e\u0447\u0435\u0440\u0435\u0434\u0438", None))
         self.label_35.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u0435\u0435 \u0432\u0440\u0435\u043c\u044f \u043e\u0436\u0438\u0434\u0430\u044f \u0432 \u043e\u0447\u0435\u0440\u0435\u0434\u0438", None))
         self.label_38.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u044b", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043e\u044f\u0442\u043d\u043e\u0441\u0442\u044c \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u043d\u0438\u044f \u043e\u0447\u0435\u0440\u0435\u0434\u0438", None))
-        self.label_39.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u0435\u0435 \u0447\u0438\u0441\u043b\u043e \u0437\u0430\u043d\u044f\u0442\u044b\u0445 \u043a\u0430\u043d\u0430\u043b\u043e\u0432", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u0435\u0435 \u0447\u0438\u0441\u043b\u043e \u0442\u0440\u0435\u0431\u043e\u0432\u0430\u043d\u0438\u0439 \u0432 \u0441\u0438\u0441\u0442\u0435\u043c\u0435", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0440\u0435\u0434\u043d\u0435\u0435 \u0432\u0440\u0435\u043c\u044f \u043f\u0440\u0438\u0431\u044b\u0432\u0430\u043d\u0438\u044f \u0432 \u0441\u0438\u0441\u0442\u0435\u043c\u0435", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\">\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u0438 \u0438 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0430\u0446\u0438\u0438</p></body></html>", None))
         self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
