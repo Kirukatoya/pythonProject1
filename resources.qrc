@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icon">
+    <file>Screenshot_19.png</file>
     <file>icon/activity.svg</file>
     <file>icon/airplay.svg</file>
     <file>icon/alert-circle.svg</file>

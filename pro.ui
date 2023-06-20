@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1562</width>
-    <height>934</height>
+    <width>1473</width>
+    <height>926</height>
    </rect>
   </property>
   <property name="focusPolicy">
@@ -441,8 +441,8 @@ p, li { white-space: pre-wrap; }
                <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>1361</width>
-                <height>821</height>
+                <width>1851</width>
+                <height>921</height>
                </rect>
               </property>
               <property name="mouseTracking">
@@ -463,7 +463,7 @@ p, li { white-space: pre-wrap; }
                  <x>0</x>
                  <y>0</y>
                  <width>651</width>
-                 <height>441</height>
+                 <height>541</height>
                 </rect>
                </property>
                <property name="frameShape">
@@ -481,10 +481,11 @@ p, li { white-space: pre-wrap; }
                   <property name="font">
                    <font>
                     <family>Franklin Gothic Medium</family>
+                    <pointsize>14</pointsize>
                    </font>
                   </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Пожалуйста, введите данные о вашей автомойке&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Пожалуйста, введите данные о вашей автомойке&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -497,7 +498,7 @@ p, li { white-space: pre-wrap; }
                    </font>
                   </property>
                   <property name="text">
-                   <string>Среднее кол-во посетителей в час</string>
+                   <string>Колличество посетителей в час</string>
                   </property>
                  </widget>
                 </item>
@@ -509,12 +510,12 @@ p, li { white-space: pre-wrap; }
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
-                    <height>100</height>
+                    <height>40</height>
                    </size>
                   </property>
                   <property name="font">
                    <font>
-                    <family>Javanese Text</family>
+                    <family>Franklin Gothic Medium</family>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
@@ -533,7 +534,9 @@ p, li { white-space: pre-wrap; }
 	border-radius: 20px;
 	color: rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
-	
+}
+QLineEdit:focus {
+	border: 2px solid #7FFF00
 }</string>
                   </property>
                   <property name="inputMethodHints">
@@ -580,7 +583,7 @@ p, li { white-space: pre-wrap; }
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
-                    <height>100</height>
+                    <height>40</height>
                    </size>
                   </property>
                   <property name="font">
@@ -589,12 +592,18 @@ p, li { white-space: pre-wrap; }
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::ClickFocus</enum>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">QLineEdit {
 	border: 2px add rgb(255, 0, 0);
 	border-radius: 20px;
 	color: rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
+}
+QLineEdit:focus {
+	border: 2px solid #7FFF00
 }</string>
                   </property>
                   <property name="text">
@@ -626,7 +635,7 @@ p, li { white-space: pre-wrap; }
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
-                    <height>100</height>
+                    <height>40</height>
                    </size>
                   </property>
                   <property name="font">
@@ -635,13 +644,21 @@ p, li { white-space: pre-wrap; }
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="tabletTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::ClickFocus</enum>
+                  </property>
                   <property name="styleSheet">
                    <string notr="true">QLineEdit {
 	border: 2px add rgb(255, 0, 0);
 	border-radius: 20px;
 	color: rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
-	
+}
+QLineEdit:focus {
+	border: 2px solid #7FFF00
 }</string>
                   </property>
                   <property name="text">
@@ -658,7 +675,7 @@ p, li { white-space: pre-wrap; }
                <property name="geometry">
                 <rect>
                  <x>20</x>
-                 <y>490</y>
+                 <y>620</y>
                  <width>141</width>
                  <height>31</height>
                 </rect>
@@ -674,39 +691,11 @@ background-color: rgb(0, 0, 0);</string>
                 <string>OK</string>
                </property>
               </widget>
-              <widget class="QLineEdit" name="HumansPerHour">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="geometry">
-                <rect>
-                 <x>800</x>
-                 <y>390</y>
-                 <width>141</width>
-                 <height>121</height>
-                </rect>
-               </property>
-               <property name="mouseTracking">
-                <bool>false</bool>
-               </property>
-               <property name="tabletTracking">
-                <bool>false</bool>
-               </property>
-               <property name="focusPolicy">
-                <enum>Qt::ClickFocus</enum>
-               </property>
-               <property name="styleSheet">
-                <string notr="true"/>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-              </widget>
               <widget class="QPushButton" name="clearBtn">
                <property name="geometry">
                 <rect>
                  <x>20</x>
-                 <y>450</y>
+                 <y>570</y>
                  <width>141</width>
                  <height>31</height>
                 </rect>
@@ -731,10 +720,10 @@ background-color: rgb(0, 0, 0);</string>
               <widget class="QTextEdit" name="textEdit_9">
                <property name="geometry">
                 <rect>
-                 <x>730</x>
+                 <x>820</x>
                  <y>160</y>
-                 <width>401</width>
-                 <height>111</height>
+                 <width>391</width>
+                 <height>391</height>
                 </rect>
                </property>
                <property name="font">
@@ -744,7 +733,9 @@ background-color: rgb(0, 0, 0);</string>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true"/>
+                <string notr="true">background-color: rgb(70, 62, 75);
+border-radius: 195px;
+border: 2px solid #7FFF00</string>
                </property>
                <property name="html">
                 <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -760,11 +751,16 @@ p, li { white-space: pre-wrap; }
                 <string/>
                </property>
               </widget>
-              <zorder>HumansPerHour</zorder>
-              <zorder>frame_8</zorder>
-              <zorder>OkBtn</zorder>
-              <zorder>clearBtn</zorder>
-              <zorder>textEdit_9</zorder>
+              <widget class="QGraphicsView" name="graphicsView">
+               <property name="geometry">
+                <rect>
+                 <x>1020</x>
+                 <y>660</y>
+                 <width>256</width>
+                 <height>192</height>
+                </rect>
+               </property>
+              </widget>
              </widget>
             </widget>
             <widget class="QWidget" name="NewTask2">
@@ -774,7 +770,7 @@ p, li { white-space: pre-wrap; }
                 <x>0</x>
                 <y>18</y>
                 <width>1351</width>
-                <height>811</height>
+                <height>851</height>
                </rect>
               </property>
               <property name="styleSheet">
@@ -828,6 +824,91 @@ background-color: rgb(0, 0, 0);</string>
                   <enum>QFrame::Raised</enum>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="15" column="0">
+                   <widget class="QLabel" name="label_3">
+                    <property name="font">
+                     <font>
+                      <family>Franklin Gothic Medium</family>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="text">
+                     <string>Коэффициэнт занятых обслуживанием каналов</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="9" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="font">
+                     <font>
+                      <family>Franklin Gothic Medium</family>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Вероятность образования очереди</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="7" column="0">
+                   <widget class="QLabel" name="label_38">
+                    <property name="font">
+                     <font>
+                      <family>Franklin Gothic Medium</family>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Нагрузка системы</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_33">
+                    <property name="font">
+                     <font>
+                      <family>Franklin Gothic Medium</family>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Рассчитанные показатели и рекомендации&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="6" column="0">
+                   <widget class="QLineEdit" name="lineEdit_3">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Javanese Text</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	border: 2px add rgb(255, 0, 0);
+	border-radius: 20px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
                   <item row="2" column="0">
                    <widget class="QLineEdit" name="lineEdit">
                     <property name="enabled">
@@ -857,6 +938,79 @@ QLineEdit {
                     </property>
                     <property name="text">
                      <string/>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="10" column="0">
+                   <widget class="QLineEdit" name="lineEdit_10">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Javanese Text</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	border: 2px add rgb(255, 0, 0);
+	border-radius: 20px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QLabel" name="label_35">
+                    <property name="font">
+                     <font>
+                      <family>Franklin Gothic Medium</family>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Среднее время ожидая в очереди</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="8" column="0">
+                   <widget class="QLineEdit" name="lineEdit_4">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Javanese Text</family>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+	border: 2px add rgb(255, 0, 0);
+	border-radius: 20px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}</string>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignCenter</set>
@@ -965,105 +1119,6 @@ QLineEdit {
                     </property>
                    </widget>
                   </item>
-                  <item row="10" column="0">
-                   <widget class="QLineEdit" name="lineEdit_10">
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>40</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Javanese Text</family>
-                      <pointsize>14</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QLineEdit {
-	border: 2px add rgb(255, 0, 0);
-	border-radius: 20px;
-	color: rgb(0, 0, 0);
-	background-color: rgb(255, 255, 255);
-}</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                    <property name="readOnly">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="5" column="0">
-                   <widget class="QLabel" name="label_35">
-                    <property name="font">
-                     <font>
-                      <family>Franklin Gothic Medium</family>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Среднее время ожидая в очереди</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="7" column="0">
-                   <widget class="QLabel" name="label_38">
-                    <property name="font">
-                     <font>
-                      <family>Franklin Gothic Medium</family>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Нагрузка системы</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="8" column="0">
-                   <widget class="QLineEdit" name="lineEdit_4">
-                    <property name="maximumSize">
-                     <size>
-                      <width>16777215</width>
-                      <height>40</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <family>Javanese Text</family>
-                      <pointsize>14</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">QLineEdit {
-	border: 2px add rgb(255, 0, 0);
-	border-radius: 20px;
-	color: rgb(0, 0, 0);
-	background-color: rgb(255, 255, 255);
-}</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                    <property name="readOnly">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="9" column="0">
-                   <widget class="QLabel" name="label_2">
-                    <property name="font">
-                     <font>
-                      <family>Franklin Gothic Medium</family>
-                      <pointsize>10</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>Вероятность образования очереди</string>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="13" column="0">
                    <widget class="QLabel" name="label_6">
                     <property name="font">
@@ -1074,19 +1129,6 @@ QLineEdit {
                     </property>
                     <property name="text">
                      <string>Среднее время прибывания в системе</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="0" column="0">
-                   <widget class="QLabel" name="label_33">
-                    <property name="font">
-                     <font>
-                      <family>Franklin Gothic Medium</family>
-                      <pointsize>12</pointsize>
-                     </font>
-                    </property>
-                    <property name="text">
-                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Рассчитанные показатели и рекомендации&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                     </property>
                    </widget>
                   </item>
@@ -1120,8 +1162,8 @@ QLineEdit {
                     </property>
                    </widget>
                   </item>
-                  <item row="6" column="0">
-                   <widget class="QLineEdit" name="lineEdit_3">
+                  <item row="16" column="0">
+                   <widget class="QLineEdit" name="lineEdit_5">
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
@@ -1144,9 +1186,6 @@ QLineEdit {
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignCenter</set>
-                    </property>
-                    <property name="readOnly">
-                     <bool>true</bool>
                     </property>
                    </widget>
                   </item>
@@ -1473,22 +1512,5 @@ p, li { white-space: pre-wrap; }
  <resources>
   <include location="resources.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>HumansPerHour</sender>
-   <signal>textEdited(QString)</signal>
-   <receiver>HumansPerHour</receiver>
-   <slot>setText(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>646</x>
-     <y>136</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>674</x>
-     <y>127</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
